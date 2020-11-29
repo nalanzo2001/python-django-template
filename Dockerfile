@@ -20,6 +20,9 @@ ENV PYTHONUNBUFFERED=1
 ADD requirements.txt .
 RUN python -m pip install -r requirements.txt
 
+# Set production settings
+ENV DJANGO_SETTINGS_MODULE=web_project.settings.production
+
 # Tell nginx where static files live. Typically, developers place static files for
 # multiple apps in a shared folder, but for the purposes here we can use the one
 # app's folder. Note that when multiple apps share a folder, you should create subfolders
