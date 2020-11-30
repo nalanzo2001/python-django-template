@@ -2,6 +2,9 @@
 from os import environ
 from .base import *
 
+# Current mode
+MODE = 'Production'
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '2gult1d96#@#b2%tz+k9x1q%-4(%f@va-!sbv*q&$t^gpp8-_='
 
